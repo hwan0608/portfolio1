@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">포트폴리오</header>
+        <ul class="wrap">
+            <li class="con st1">
+                내용1
+            </li>
+            <li class="con st2">
+                내용2
+            </li>
+            <li class="con st3">
+                내용3
+            </li>
+        </ul>
+        
+        <script type="text/javascript">
+            // 해당영역 벌어지게 
+            $(".wrap .con").hover(function  () {
+                $(".wrap .con").not($(this)).addClass("active");
+            },function  () {
+                $(".wrap .con").removeClass("active");
+            });
+        </script>
+    </div>
+</body>
+</html>
